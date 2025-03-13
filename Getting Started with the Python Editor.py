@@ -46,7 +46,7 @@ proc casutil;
 
 	* Send the SAS data set to the CAS server and promote the table *;
 	load data=work.home_equity_compute_py casout="home_equity_cas_py" outcaslib="casuser" promote;
-
+    save incaslib="casuser" casdata="home_equity_cas_py" casout="home_equity_cas_py.sashdat" outcaslib="casuser" replace; 
 	* View in-memory CAS tables *;
 	list tables;
 quit;
