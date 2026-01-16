@@ -18,7 +18,7 @@
 
 title "Compute Server Program";
 
-libname mydata "c:\mydata";
+libname mydata "/workshop/quickstart";
 
 data mydata.home_equity;
     length LOAN_OUTCOME $ 7;
